@@ -1,0 +1,17 @@
+Note that in the Python version,
+we use the 'analogio' module
+to read the analog input instead of analogRead.
+We also use the 'mean' function from the statistics module
+to calculate the average of the pH array.
+Additionally, we use the board module to define the pins used by the Arduino board.
+Finally, we use the time module to measure time intervals instead of millis().
+
+
+The board and analogio modules are part of the Adafruit CircuitPython library,
+which needs to be installed on your microcontroller board to use these modules.
+If you are running this code on a microcontroller board that does not have CircuitPython installed,
+then you will get an error when trying to import these modules.
+
+If you are using a different microcontroller board,
+you might need to use different libraries to interact with the hardware.
+Please consult the documentation of your board to find out which libraries you should use for hardware access.
