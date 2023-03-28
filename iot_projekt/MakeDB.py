@@ -10,7 +10,7 @@ con = sqlite3.connect('PH_DB.db')
 
 with con:
     cur = con.cursor()
-    cur.execute("CREATE TABLE IF NOT EXISTS PH_SENSOR (TIMESTAMP DATETIME, VALUE NUMERIC, WATERTEMP NUMERIC)")
+    cur.execute("CREATE TABLE IF NOT EXISTS PH_SENSOR (TIMESTAMP DATETIME, PHVALUE NUMERIC)")
     print("DATABASE CREATED")
 
 
