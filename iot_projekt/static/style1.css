@@ -30,11 +30,11 @@ body {
 .menu {
 	display: inline-block;
 	position: absolute;
-	width: 46px;
+	width: 45px;
 	top: 5%;
 	left: 5%;
 	transform: translate(5%, 5%);
-	font-size: 60px;
+	font-size: 62px;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #fff;
 	cursor: pointer;
@@ -49,16 +49,16 @@ body {
 }
 
 .menu:before {
-	content: "P\00a0 \00a0 \00a0 \00a0\00a0H";
+	content: "D \00a0 \00a0 \00a0 \00a0 \00a0T";
 	top: -60px;
-	left: -160%;
-	width: 190px;
+	left: -100%;
+	width: 200px;
 }
 
 .menu:after {
-	content: "SENSOR";
-	top: 40px;
-	left: 125px;
+	content: "H";
+	top: 50px;
+	left: 100%;
 }
 
 .menu:hover::before,
@@ -112,7 +112,6 @@ body {
 	right: 10%;
 	left: 18%;
 	height: 12%;
-	font-style: bold;
 }
 
 /*.menu:hover .bar {*/
