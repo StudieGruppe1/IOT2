@@ -4,7 +4,6 @@ import sqlite3
 import sys
 
 
-
 dbname='PH_DB.db'
 con = sqlite3.connect('PH_DB.db')
 
