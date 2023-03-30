@@ -4,7 +4,7 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 import io
 
-from flask import Flask, render_template, send_file, make_response, request
+from flask import Flask, render_template, make_response, request
 app = Flask(__name__)
 
 import sqlite3
