@@ -76,17 +76,21 @@ def set_neopixel_leds(ANALOG_VALUE):
                 print("PH value is '10")
                 PH_VALUE = 10
             elif ANALOG_VALUE <= 800:
-                pixels.fill((0, 255, 255))
+                pixels.fill((0, 0, 255))
                 print("PH value is '11")
                 PH_VALUE = 11
             elif ANALOG_VALUE<= 900:
-                pixels.fill((0, 128, 255))
+                pixels.fill((69, 0, 255))
                 print("PH value is '12")
                 PH_VALUE = 12
             elif ANALOG_VALUE <= 1000:
-                pixels.fill((0, 0, 255))
+                pixels.fill((128, 0, 255))
                 print("PH value is '13")
                 PH_VALUE = 13
+            elif ANALOG_VALUE <=1023:
+                pixels.fill((197,0,255))
+                print("PH value is 14")
+                PH_VALUE = 14
             return PH_VALUE
             time.sleep(1)
         except KeyboardInterrupt:
