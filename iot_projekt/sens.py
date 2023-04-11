@@ -96,12 +96,3 @@ def set_neopixel_leds(ANALOG_VALUE):
         except KeyboardInterrupt:
             pixels.fill((0,0,0))
             pixels.show()
-
-#Main program loop
-#try:
-#    while True:
-#        ANALOG_VALUE = read_ph_sensor()  # read pH sensor
-#        set_neopixel_leds(ANALOG_VALUE)  # set NeoPixel LED color based on pH value
-#except KeyboardInterrupt:
-#    pixels.fill((0,0,0))
-#    pixels.show()
