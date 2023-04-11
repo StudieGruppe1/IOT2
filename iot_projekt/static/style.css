@@ -1,21 +1,120 @@
-body{
-	background: blue;
-	color: yellow;
-	padding:1%
+body {
+	color: rgb(255, 255, 255);
+	padding: 5%
 }
 
+
+
 .button {
-	font: bold 15px Arial;
+	font: bold 17px Times;
 	text-decoration: none;
-	background-color: #EEEEEE;
-	color: #333333;
+	background-color: #ffffff;
+	color: #000000;
 	padding: 2px 6px 2px 6px;
-	border-top: 1px solid #CCCCCC;
+	border-top: 1px solid #b28d8d;
 	border-right: 1px solid #333333;
 	border-bottom: 1px solid #333333;
 	border-left: 1px solid #CCCCCC;
 }
 
-img{
+img {
 	display: display: inline-block
 }
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+
+body {
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+}
+
+.menu {
+	display: inline-block;
+	position: absolute;
+	width: 46px;
+	top: 5%;
+	left: 5%;
+	transform: translate(5%, 5%);
+	font-size: 60px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+	cursor: pointer;
+}
+
+.menu::before,
+.menu::after {
+	position: absolute;
+	transition: 0.4s ease;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.menu:before {
+	content: "P\00a0 \00a0 \00a0 \00a0\00a0H";
+	top: -60px;
+	left: -160%;
+	width: 190px;
+}
+
+.menu:after {
+	content: "SENSOR";
+	top: 40px;
+	left: 125px;
+}
+
+.menu:hover::before,
+.menu:hover::after {
+	top: -4.3px;
+	opacity: 1;
+	transition: 0.2s ease, opacity 0.17s 0.03s ease-in;
+}
+
+.bar {
+	width: 80%;
+	height: 3px;
+	background: white;
+	margin: 0 auto 18px;
+	transition: transform 0.4s ease;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	overflow-x,
+	overflow-y: hidden;
+	font-face: "verdana", "sans-serif";
+	box-sizing: border-box;
+}
+
+.boxed {
+	display: justify;
+	border: 3px solid rgb(0, 0, 0);
+	width: 1000px;
+	padding: 10px;
+	position: static;
+	margin-bottom: 15px;
+	position: absolute;
+	top: 25%;
+	bottom: 80%;
+	right: 50%;
+	left: 18%;
+	height: 8%;
+}
+
+.boxed_2 {
+	display: justify;
+	border: 3px solid rgb(0, 0, 0);
+	width: 1000px;
+	padding: 10px;
+	position: static;
+	margin-bottom: 15px;
+	position: absolute;
+	top: 40%;
+	right: 10%;
+	left: 18%;
+	height: 12%;
+	font-style: bold;
+}
+
+/*.menu:hover .bar {*/
+/*  transform: rotate(-10deg);*/
+/*}*/
